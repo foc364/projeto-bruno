@@ -10,7 +10,8 @@
 /* ======== Columns */
 body {
   font-family: 'verdana', sans-serif !important;
-  line-height: 1; }
+  line-height: 1;
+  background-color: #009788; }
 
 html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -72,7 +73,7 @@ header {
       height: 211px; }
 
 main {
-  min-height: 600px;
+  min-height: 480px;
   background-color: #009788; }
   main:before, main:after {
     content: " ";
@@ -80,15 +81,18 @@ main {
   main:after {
     clear: both; }
   main nav {
+    position: absolute;
     float: right;
-    margin: 0 130px 0 0; }
-    main nav ul li {
-      display: inline-block;
-      margin: 20px 20px 0 0; }
-      main nav ul li a {
-        color: white;
-        font-size: 14px;
-        font-weight: 400; }
+    margin: 0 130px 0 601px; }
+    main nav ul {
+      width: 700px; }
+      main nav ul li {
+        display: inline-block;
+        margin: 20px 20px 0 0; }
+        main nav ul li a {
+          color: white;
+          font-size: 14px;
+          font-weight: 400; }
   main .foto {
     margin: 120px 0 0 90px;
     float: left;
@@ -99,12 +103,53 @@ main {
   main .texto {
     font-family: Verdana, Geneva, sans-serif !important;
     color: #ffffff;
-    line-height: 18px;
+    line-height: 24px;
     margin: 119px 319px 7px 600px;
     float: right;
-    position: absolute;
-    font-weight: normal; }
-    main .texto h1 {
-      font-size: 23px; }
-    main .texto h2 {
-      font-size: 15px; }
+    position: absolute; }
+  main h1 {
+    font-size: 23px;
+    font-style: normal !important;
+    font-weight: normal !important; }
+  main h2 {
+    font-size: 13px;
+    font-style: normal !important;
+    font-weight: normal !important; }
+
+footer {
+  min-height: 100px;
+  background-color: #009788; }
+  footer:before, footer:after {
+    content: " ";
+    display: table; }
+  footer:after {
+    clear: both; }
+  footer .div-local-1 {
+    float: left;
+    margin: -30px 26px 0px 237px;
+    position: absolute; }
+  footer .div-email {
+    float: left;
+    margin: -30px 26px 0px 670px;
+    position: absolute; }
+  footer .div-local-2 {
+    float: left;
+    margin: -30px 26px 0px 1025px;
+    position: absolute; }
+  footer div img {
+    width: 28px; }
+  footer div .local-1 {
+    margin-left: 72px; }
+  footer div .local-2 {
+    margin-left: 81px; }
+  footer div .email {
+    margin-left: 22px;
+    width: 52px; }
+  footer div p {
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-size: 9px;
+    font-style: normal !important;
+    font-weight: normal !important;
+    color: white;
+    line-height: 5px;
+    text-align: center; }
