@@ -10,8 +10,7 @@
 /* ======== Columns */
 body {
   font-family: 'verdana', sans-serif !important;
-  line-height: 1;
-  background-color: #009788; }
+  line-height: 1; }
 
 html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -54,7 +53,7 @@ table {
   border-spacing: 0; }
 
 header {
-  min-height: 280px;
+  min-height: 260px;
   background-image: url("../images/site-01.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -67,13 +66,13 @@ header {
     clear: both; }
   header .logo {
     position: absolute;
-    margin: 179px 0 0 48px; }
+    margin: 159px 0 0 48px; }
     header .logo img {
       width: 400px;
       height: 211px; }
 
 main {
-  min-height: 480px;
+  min-height: 456px;
   background-color: #009788; }
   main:before, main:after {
     content: " ";
@@ -83,7 +82,7 @@ main {
   main nav {
     position: absolute;
     float: right;
-    margin: 0 130px 0 601px; }
+    margin: 12px 140px 0px 508px; }
     main nav ul {
       width: 700px; }
       main nav ul li {
@@ -97,9 +96,12 @@ main {
     font-family: Verdana, Geneva, sans-serif !important;
     color: #ffffff;
     line-height: 24px;
-    margin: 104px 319px 7px 600px;
+    margin: 107px 324px 7px 507px;
     float: right;
     position: absolute; }
+  main p {
+    margin: 0 0 -12px 0;
+    width: 600px; }
   main h1 {
     font-size: 23px;
     font-style: normal !important;
@@ -110,7 +112,7 @@ main {
     font-weight: normal !important; }
 
 footer {
-  min-height: 70px;
+  min-height: 55px;
   background-color: #009788; }
   footer:before, footer:after {
     content: " ";
@@ -119,15 +121,15 @@ footer {
     clear: both; }
   footer .div-local-1 {
     float: left;
-    margin: 24px 26px 0px 237px;
+    margin: -50px 26px 0px 237px;
     position: absolute; }
   footer .div-email {
     float: left;
-    margin: 24px 26px 0px 670px;
+    margin: -50px 26px 0px 567px;
     position: absolute; }
   footer .div-local-2 {
     float: left;
-    margin: 24px 26px 0px 1025px;
+    margin: -50px 26px 0px 793px;
     position: absolute; }
   footer div img {
     width: 28px; }
