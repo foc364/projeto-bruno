@@ -4,15 +4,16 @@
 
 	height: 100%
 	width: 100%
+	position: fixed
 
 	display: flex
 	justify-content: center
 
 .container
 	background:
-		color: black
+		color: #009788
 	height: 100%
-	width: 80%
+	width: 81%
 
 
 	display: flex
@@ -22,49 +23,119 @@
 header
 	order: 1	
 
-	
+	.logo 
+		position: absolute
+		margin: 145px 0 0 47px;
+
+		img 
+			width: 344px
+			height: 179px
 
 main
 	display: flex
 	background-color: #009788
 	order: 2
 
-	.logo 
-		img 
-			width: 386px
-			height: 204px
+	.flex-texto-nav
+		order: 2
+		display: flex
+		flex-direction: column
+		width: 55%
+		margin-top: 27px
 
-	nav
-		ul
-			li
-				display: inline-block
+		.teste
+			display: flex
+			flex-direction: row
+			justify-content: space-between
 
-				a
-					padding: 10px;
-					color: $branco
-					font-size: 14px
-					font-weight: 400
+			a
+				color: $branco
+				font-size: 14px
+				font-weight: 400
 
-	.foto
+
+		.texto
+			@media screen and (max-height: 700px) {margin-top: 27px}
+			@media screen and (min-height: 701px) {margin-top: 54px}
+			font-family: Verdana, Geneva, sans-serif !important
+			color: #ffffff
+			line-height: 24px
+			width: 80%
+
+	.flex-logo-foto
 		order: 1
-		width: 200px;
+		display: flex
+		flex-direction: column
+		align-content: center
+		width: 40%
+		
+		.foto
+			@media screen and (max-height: 700px) {margin: 82px 0 0 68px}
+			@media screen and (min-height: 701px) {margin: 105px 0 0 68px}
+			
+			img
+				@media screen and (max-height: 700px) {width: 260px}
+				@media screen and (min-height: 701px) {width: 300px}
 
-		img
-			width: 300px
-			height: 283px
-
-	.texto
-		order: 2	
-		font-family: Verdana, Geneva, sans-serif !important
-		color: #ffffff
-		line-height: 24px
+				@media screen and (max-height: 700px) {height: 237px}
+				@media screen and (min-height: 701px) {height: 283px}
+				
 
 footer
+	display: flex
+	flex-direction: row
+	justify-content: center
+	@media screen and (max-height: 700px) {margin-top: 39px}
+	@media screen and (min-height: 701px) {margin-top: 53px}
 	order: 3
 
+	.div-local-1
+		display: flex
+		flex-direction: column
+		align-items: center
+		
+		.alinhamento
+			text-align: center
+			margin-left: 124px	
+
+		div
+			width: 100%
+
+	.div-email
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	.div-local-2
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		.alinhamento
+			text-align: center
+			margin-right: 124px	
+
+		div
+			width: 100%
+
 	div
-		background:
-			color: green
+		background-color: #009788
+		width: 35%
+
+		img
+			width: 28px
+	
+		.email
+			width: 52px
+
+		p
+			font-family: Verdana, Geneva, sans-serif !important
+			font-size: 9px
+			font-style: normal !important
+			font-weight: normal !important
+			color: $branco
+			line-height: 5px
+			text-align: center
 
 h1
 	font-size: 23px
