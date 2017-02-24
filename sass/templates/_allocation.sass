@@ -1,51 +1,63 @@
 main
-	
-	font-family: Verdana, Geneva, sans-serif !important
-	color: #ffffff
-	line-height: 24px
+	order: 2
+	display: flex
+	background-color: #009788
+	height: 85%
 
-	.foto
-		margin: 120px 0 0 164px
-		float: left
-		width: 30%
-		position: absolute
-		line-height: 11px
+	.flex-texto-nav
+		order: 2
+		display: flex
+		flex-direction: column
+		width: 55%
+		margin-top: 27px
 
-	.texto	
-		margin: 117px 319px 7px 740px
-		float: right
-		position: absolute
-		line-height: 11px
+		.nav
+			display: flex
+			flex-direction: row
+			justify-content: space-between
 
-	.iframe-texto
-		margin: 27px 0 0 0
+			a
+				color: $branco
+				font-size: 14px
+				font-weight: 400
 
-	h1
-		font-size: 23px
-		font-style: normal !important
-		font-weight: normal !important
 
-	h2 
-		font-size: 13px
-		font-style: normal !important
-		font-weight: normal !important
+		.texto
+			font-family: Verdana, Geneva, sans-serif !important
+			color: #ffffff
+			line-height: 5px
+			display: flex
+			flex-direction: column
+			margin-top: 57px
+			height: 100%
 
-footer
+			.desc-texto
+				width: 100%
+				margin-left: 62px
 
-	.div-local-1
+			iframe
+				width: 80%
+				height: 100%
+				margin-top: 19px
+				align-self: center
 
-		float: left
-		margin: 170px 26px 0px 237px
-		position: absolute
+	.flex-foto
+		font-family: Verdana, Geneva, sans-serif !important
+		color: #ffffff
+		line-height: 5px
+		order: 1
+		display: flex
+		flex-direction: column
+		margin-top: 94px
+		width: 50%
 
-	.div-email
-		float: left
-		margin: 170px 26px 0px 670px
-		position: absolute
+		.desc-texto
+			width: 100%
+			margin-left: 57px
 
-	.div-local-2
+		iframe
+			width: 80%
+			height: 100%
+			margin-left: 57px
 
-		float: left
-		margin: 170px 26px 0px 1025px
-		position: absolute
-
+		

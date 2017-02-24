@@ -1,53 +1,43 @@
 main
+	order: 2
+	display: flex
+	background-color: #009788
+	height: 85%
 
-	.foto
-		margin: 120px 0 0 90px
-		float: left
-		width: 30%
-		position: absolute
+	.flex-texto-nav
+		order: 2
+		display: flex
+		flex-direction: column
+		width: 55%
+		margin-top: 27px
 
-	.galeria-1-mini
-		width: 200px
-		height: 179px
-		position: absolute
-		margin: 1px 0 0 0
+		.nav
+			display: flex
+			flex-direction: row
+			justify-content: space-between
 
-	.galeria-2-mini
-		width: 200px
-		height: 179px
-		position: absolute
-		margin: 1px 0 0 216px
-
-	.galeria-3-mini
-		width: 200px
-		height: 179px
-		position: absolute
-		margin: 195px 0 0 0
+			a
+				color: $branco
+				font-size: 14px
+				font-weight: 400
 
 
-	.galeria-4-mini
-		width: 200px
-		height: 179px
-		position: absolute
-		margin: 194px 0 0 212px
+		.texto
+			@media screen and (max-height: 700px) {margin-top: 27px}
+			@media screen and (min-height: 701px) {margin-top: 54px}
+			font-family: Verdana, Geneva, sans-serif !important
+			color: #ffffff
+			line-height: 24px
+			overflow-y: scroll
 
-footer
-
-	.div-local-1
-
-		float: left
-		margin: 170px 26px 0px 237px
-		position: absolute
-
-	.div-email
-
-		float: left
-		margin: 170px 26px 0px 670px
-		position: absolute
-
-	.div-local-2
-
-		float: left
-		margin: 170px 26px 0px 1025px
-		position: absolute
+	.flex-foto
+		order: 1
+		display: flex
+		flex-direction: row
+		justify-content: center
+		margin-top: 118px
+		width: 40%
+		
+		img
+			width: 60%
 

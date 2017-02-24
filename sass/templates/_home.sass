@@ -1,40 +1,8 @@
-.layout
-	background:
-		color: gray
-
-	height: 100%
-	width: 100%
-	position: fixed
-
-	display: flex
-	justify-content: center
-
-.container
-	background:
-		color: #009788
-	height: 100%
-	width: 81%
-
-
-	display: flex
-	flex-direction: column
-
-
-header
-	order: 1	
-
-	.logo 
-		position: absolute
-		margin: 145px 0 0 47px;
-
-		img 
-			width: 344px
-			height: 179px
-
 main
+	order: 2
 	display: flex
 	background-color: #009788
-	order: 2
+	height: 85%
 
 	.flex-texto-nav
 		order: 2
@@ -43,7 +11,7 @@ main
 		width: 55%
 		margin-top: 27px
 
-		.teste
+		.nav
 			display: flex
 			flex-direction: row
 			justify-content: space-between
@@ -62,7 +30,7 @@ main
 			line-height: 24px
 			width: 80%
 
-	.flex-logo-foto
+	.flex-foto
 		order: 1
 		display: flex
 		flex-direction: column
@@ -72,6 +40,9 @@ main
 		.foto
 			@media screen and (max-height: 700px) {margin: 82px 0 0 68px}
 			@media screen and (min-height: 701px) {margin: 105px 0 0 68px}
+
+			@media screen and (max-height: 640px) {margin: 82px 0 0 110px}
+			@media screen and (min-height: 641px) {margin: 105px 0 0 68px}
 			
 			img
 				@media screen and (max-height: 700px) {width: 260px}
@@ -79,71 +50,12 @@ main
 
 				@media screen and (max-height: 700px) {height: 237px}
 				@media screen and (min-height: 701px) {height: 283px}
+
+				@media screen and (max-height: 640px) {height: 190px}
+				@media screen and (min-height: 641px) {height: 283px}
+
+				@media screen and (max-height: 640px) {width: 210px}
+				@media screen and (min-height: 641px) {width: 283px}
+
+
 				
-
-footer
-	display: flex
-	flex-direction: row
-	justify-content: center
-	@media screen and (max-height: 700px) {margin-top: 39px}
-	@media screen and (min-height: 701px) {margin-top: 53px}
-	order: 3
-
-	.div-local-1
-		display: flex
-		flex-direction: column
-		align-items: center
-		
-		.alinhamento
-			text-align: center
-			margin-left: 124px	
-
-		div
-			width: 100%
-
-	.div-email
-		display: flex
-		flex-direction: column
-		align-items: center
-
-	.div-local-2
-		display: flex
-		flex-direction: column
-		align-items: center
-
-		.alinhamento
-			text-align: center
-			margin-right: 124px	
-
-		div
-			width: 100%
-
-	div
-		background-color: #009788
-		width: 35%
-
-		img
-			width: 28px
-	
-		.email
-			width: 52px
-
-		p
-			font-family: Verdana, Geneva, sans-serif !important
-			font-size: 9px
-			font-style: normal !important
-			font-weight: normal !important
-			color: $branco
-			line-height: 5px
-			text-align: center
-
-h1
-	font-size: 23px
-	font-style: normal !important
-	font-weight: normal !important
-
-h2 
-	font-size: 13px
-	font-style: normal !important
-	font-weight: normal !important
-
