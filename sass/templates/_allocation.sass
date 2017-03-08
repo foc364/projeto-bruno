@@ -1,63 +1,65 @@
 main
-	order: 2
-	display: flex
-	background-color: #009788
-	height: 85%
-
-	.flex-texto-nav
-		order: 2
+	display: block
+	
+	.nav
 		display: flex
-		flex-direction: column
+		justify-content: space-between
 		width: 55%
 		margin-top: 27px
+		margin-right: 5%
+		float: right
 
-		.nav
-			display: flex
-			flex-direction: row
-			justify-content: space-between
+		a
+			color: $branco
+			font-size: 14px
+			font-weight: 400
 
-			a
-				color: $branco
-				font-size: 14px
-				font-weight: 400
-
-
+	.flex-texto-nav
+		width: 45%
+		height: 81%
+		float: right
+		margin-top: 16px
+		
 		.texto
 			font-family: Verdana, Geneva, sans-serif !important
 			color: #ffffff
-			line-height: 5px
 			display: flex
 			flex-direction: column
-			margin-top: 57px
+			margin-top: 1%
+			margin-right: 5%
 			height: 100%
 
 			.desc-texto
-				width: 100%
-				margin-left: 62px
+				//width: 100%
+				//margin-left: 62px
+				line-height: 12px
 
 			iframe
-				width: 80%
-				height: 100%
-				margin-top: 19px
-				align-self: center
+				width: 90%
+				height: 63%
+				margin-top: 4%
+				//align-self: center
 
 	.flex-foto
+		float: left
 		font-family: Verdana, Geneva, sans-serif !important
 		color: #ffffff
-		line-height: 5px
 		order: 1
 		display: flex
 		flex-direction: column
-		margin-top: 94px
-		width: 50%
+		margin-top: 2%
+		margin-left: 5%
+		height: 79%
+		width: 40%
 
 		.desc-texto
-			width: 100%
-			margin-left: 57px
+			//width: 100%
+			//margin-left: 57px
+			line-height: 11px
 
 		iframe
-			width: 80%
+			width: 90%
 			height: 100%
-			margin-left: 57px
+			//margin-left: 57px
 
 		

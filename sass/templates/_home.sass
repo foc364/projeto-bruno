@@ -1,61 +1,33 @@
+header
+	height: 30%	
+
 main
-	order: 2
-	display: flex
-	background-color: #009788
-	height: 85%
 
 	.flex-texto-nav
-		order: 2
-		display: flex
-		flex-direction: column
-		width: 55%
-		margin-top: 27px
-
-		.nav
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-
-			a
-				color: $branco
-				font-size: 14px
-				font-weight: 400
-
 
 		.texto
-			@media screen and (max-height: 700px) {margin-top: 27px}
-			@media screen and (min-height: 701px) {margin-top: 54px}
 			font-family: Verdana, Geneva, sans-serif !important
 			color: #ffffff
 			line-height: 24px
 			width: 80%
+			margin-top: 13%
 
 	.flex-foto
 		order: 1
 		display: flex
 		flex-direction: column
-		align-content: center
+		align-items: center
 		width: 40%
 		
 		.foto
-			@media screen and (max-height: 700px) {margin: 82px 0 0 68px}
-			@media screen and (min-height: 701px) {margin: 105px 0 0 68px}
-
-			@media screen and (max-height: 640px) {margin: 82px 0 0 110px}
-			@media screen and (min-height: 641px) {margin: 105px 0 0 68px}
-			
-			img
-				@media screen and (max-height: 700px) {width: 260px}
-				@media screen and (min-height: 701px) {width: 300px}
-
-				@media screen and (max-height: 700px) {height: 237px}
-				@media screen and (min-height: 701px) {height: 283px}
-
-				@media screen and (max-height: 640px) {height: 190px}
-				@media screen and (min-height: 641px) {height: 283px}
-
-				@media screen and (max-height: 640px) {width: 210px}
-				@media screen and (min-height: 641px) {width: 283px}
+			background:
+				image: url('../images/foto.png')
+				position: top center
+				repeat: no-repeat
+				size: contain
+				attachment: local
+			height: 100%
+			width: 62%
+			margin-top: 10%
 
 
-				
