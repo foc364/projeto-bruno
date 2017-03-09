@@ -68,6 +68,9 @@ html, body {
   width: 81%;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-device-width: 480px) {
+    .container {
+      width: 100%; } }
   .container .faixa-topo {
     order: -1;
     background-color: #009788;
@@ -94,24 +97,21 @@ header {
     margin-left: -29%; }
 
 main {
-  order: 2;
-  display: flex;
-  background-color: #009788;
-  height: 58%; }
-  main .flex-texto-nav {
-    order: 2;
+  order: 2; }
+  main .div-foto {
     display: flex;
-    flex-direction: column;
-    width: 55%;
-    margin-top: 27px; }
-    main .flex-texto-nav .nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      main .flex-texto-nav .nav a {
-        color: white;
-        font-size: 14px;
-        font-weight: 400; }
+    flex-direction: column; }
+  main .foto {
+    align-self: center;
+    width: 63%; }
+  main .texto {
+    font-family: Verdana, Geneva, sans-serif !important;
+    color: #ffffff;
+    line-height: 14px; }
+  main a {
+    color: white;
+    font-size: 8px;
+    font-weight: 400; }
 
 footer {
   display: flex;
@@ -168,28 +168,44 @@ h2 {
   font-style: normal !important;
   font-weight: normal !important; }
 
+body {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif !important; }
+
+h1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal; }
+
+h2 {
+  font-size: 8px;
+  font-style: normal;
+  font-weight: normal; }
+
 header {
   height: 30%; }
 
-main .flex-texto-nav .texto {
-  font-family: Verdana, Geneva, sans-serif !important;
-  color: #ffffff;
-  line-height: 24px;
-  width: 80%;
-  margin-top: 13%; }
-
-main .flex-foto {
-  order: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40%; }
-  main .flex-foto .foto {
-    background-image: url("../images/foto.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: local;
-    height: 100%;
-    width: 62%;
-    margin-top: 10%; }
+main {
+  order: 2; }
+  main:before, main:after {
+    content: " ";
+    display: table; }
+  main:after {
+    clear: both; }
+  main .row.nav {
+    margin-top: 3px; }
+  main .row.main {
+    margin-top: 35px; }
+  main .div-foto {
+    display: flex;
+    flex-direction: column; }
+  main .foto {
+    align-self: center;
+    width: 88%; }
+  main .texto {
+    font-family: Verdana, Geneva, sans-serif !important;
+    color: #ffffff;
+    line-height: 14px; }
+  main a {
+    font-size: 8px;
+    font-weight: 400; }

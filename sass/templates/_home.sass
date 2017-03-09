@@ -2,32 +2,30 @@ header
 	height: 30%	
 
 main
+	order: 2
+	+clearfix
+	
+	.row.nav
+		margin-top: 3px
 
-	.flex-texto-nav
+	.row.main
+		margin-top: 35px
 
-		.texto
-			font-family: Verdana, Geneva, sans-serif !important
-			color: #ffffff
-			line-height: 24px
-			width: 80%
-			margin-top: 13%
-
-	.flex-foto
-		order: 1
+	.div-foto
 		display: flex
 		flex-direction: column
-		align-items: center
-		width: 40%
-		
-		.foto
-			background:
-				image: url('../images/foto.png')
-				position: top center
-				repeat: no-repeat
-				size: contain
-				attachment: local
-			height: 100%
-			width: 62%
-			margin-top: 10%
+
+	.foto
+		align-self: center
+		width: 88%
+
+	.texto
+		font-family: Verdana, Geneva, sans-serif !important
+		color: #ffffff
+		line-height: 14px
+	a
+		font-size: 8px
+		font-weight: 400
+
 
 
