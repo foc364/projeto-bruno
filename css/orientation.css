@@ -67,7 +67,14 @@ html, body {
   height: 100%;
   width: 81%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-self: center; }
+  @media only screen and (max-device-width: 480px) {
+    .container {
+      width: 100%; } }
+  @media only screen and (max-device-width: 480px) {
+    .container {
+      height: 74%; } }
   .container .faixa-topo {
     order: -1;
     background-color: #009788;
